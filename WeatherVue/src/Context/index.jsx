@@ -22,6 +22,7 @@ export const StateContextProvider = ({ children }) => {
             setWeather({
                 temp: data.main.temp,
                 humidity: data.main.humidity,
+                pressure: data.main.pressure,
                 heatindex: data.main.feels_like,
                 conditions: data.weather[0].description,
                 windspeed: data.wind.speed,

@@ -43,6 +43,7 @@ function App() {
             place={thisLocation}
             windspeed={weather?.windspeed}
             humidity={weather.humidity}
+            pressure={weather.pressure}
             temperature={weather.temp}
             heatIndex={weather.heatindex}
             iconString={values[0]?.main}
@@ -61,6 +62,7 @@ function App() {
           ))}
         </div>
       </main>
+      <p className='text-blue-800'>Developed By Prachi ❤️</p>
     </div>
   );
 }

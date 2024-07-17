@@ -19,3 +19,43 @@
   border: 1px solid rgba(225,225,225,0.18);
 }
 
+/* @media (max-width: 640px) {
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-detail {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+} */
+
+/* For larger screens (tablet and laptop) */
+@media (min-width: 641px) {
+  .weather-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .weather-detail {
+    flex: 1;
+    margin: 0 0.5rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 640px) {
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-detail {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
